@@ -1,21 +1,39 @@
 [project]
-name = "Blockchain-Based-Urban-Traffic-Optimization"
-description = ""
+name = 'Blockchain-Based-Urban-Traffic-Optimization'
+description = ''
 authors = []
 telemetry = true
-cache_dir = "./.cache"
+cache_dir = './.cache'
+requirements = []
+[contracts.congestion-prediction]
+path = 'contracts/congestion-prediction.clar'
+clarity_version = 2
+epoch = 2.5
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
+[contracts.intersection-verification]
+path = 'contracts/intersection-verification.clar'
+clarity_version = 2
+epoch = 2.5
 
+[contracts.performance-analysis]
+path = 'contracts/performance-analysis.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.signal-cordinator]
+path = 'contracts/signal-cordinator.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.vehicle-flow]
+path = 'contracts/vehicle-flow.clar'
+clarity_version = 2
+epoch = 2.5
 [repl.analysis]
-passes = ["check_checker"]
-check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
+passes = ['check_checker']
 
-# Check-checker settings:
-# trusted_sender: if true, inputs are trusted after tx_sender has been checked.
-# trusted_caller: if true, inputs are trusted after contract-caller has been checked.
-# callee_filter: if true, untrusted data may be passed into a private function without a
-# warning, if it gets checked inside. This check will also propagate up to the
-# caller.
-# More informations: https://www.hiro.so/blog/new-safety-checks-in-clarinet
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
