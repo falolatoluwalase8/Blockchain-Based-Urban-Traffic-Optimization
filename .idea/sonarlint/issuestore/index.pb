@@ -9,3 +9,13 @@ S
 #contracts/performance-analysis.clar,a/e/ae0e5bb0cdc1dccb204f08fb083afe6be47f2913
 P
  contracts/signal-cordinator.clar,9/b/9b3ce80989867e6c81c33a1291f1b71fa1b721c7
+K
+contracts/vehicle-flow.clar,f/d/fd82a28cd1b39e39ee662745e07ad29fd93cff8b
+W
+'tests/intersection-verification.test.ts,8/7/87f77aa881704de1c3f69c446906c7c473322ca0
+J
+tests/vehicle-flow.test.ts,4/6/46e0292135a18bdc7526418270c4969bfdda9c1e
+S
+#tests/congestion-prediction.test.ts,a/3/a3d8f8e0aec09803ebe866dff39cbff2974cd077
+O
+tests/signal-cordinator.test.ts,3/e/3e67bf5278807dd702a9b61d2c0d5d126d6a77bc
